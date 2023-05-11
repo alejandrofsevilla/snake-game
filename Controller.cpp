@@ -16,16 +16,16 @@ void Controller::update() {
           default:
             break;
           case sf::Keyboard::Left:
-            m_model.setSnakeDirection(Snake::Direction::Left);
+            m_model.addSnakeDirectionChange(Snake::Direction::Left);
             break;
           case sf::Keyboard::Right:
-            m_model.setSnakeDirection(Snake::Direction::Right);
+            m_model.addSnakeDirectionChange(Snake::Direction::Right);
             break;
           case sf::Keyboard::Down:
-            m_model.setSnakeDirection(Snake::Direction::Down);
+            m_model.addSnakeDirectionChange(Snake::Direction::Down);
             break;
           case sf::Keyboard::Up:
-            m_model.setSnakeDirection(Snake::Direction::Up);
+            m_model.addSnakeDirectionChange(Snake::Direction::Up);
             break;
         }
     }

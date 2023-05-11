@@ -14,7 +14,7 @@ class Model {
   bool isSnakeDead() const;
   int points() const;
 
-  void setSnakeDirection(Snake::Direction dir);
+  void addSnakeDirectionChange(Snake::Direction dir);
   void update();
 
  private:

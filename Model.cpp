@@ -41,7 +41,7 @@ bool Model::isSnakeDead() const { return m_snake.isDead(); }
 
 int Model::points() const { return m_points; }
 
-void Model::setSnakeDirection(Snake::Direction dir) {
+void Model::addSnakeDirectionChange(Snake::Direction dir) {
   m_snake.addDirectionChange(dir);
 }
 
